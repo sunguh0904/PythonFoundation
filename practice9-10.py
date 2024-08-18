@@ -83,7 +83,7 @@ class FlyableAttackUnit(AttackUnit, Flyable):
 # 레이스
 class Wraith(FlyableAttackUnit):
     def __init__(self):
-        FlyableAttackUnit.__init__("레이스", 80, 20, 5)
+        FlyableAttackUnit.__init__(self, "레이스", 80, 20, 5)
         self.clocked = False # 클로킹 모드 (해제 상태)
 
     def clocking(self):
